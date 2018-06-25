@@ -27,6 +27,7 @@ app.get("/hi", function(req, res) {
     else {
     	console.log(hero);
 	    let found = false;
+	    let l=0;
 	    if(hero!=undefined) {
 	    	for(let i = 0; i<data.Cards.length; i++){
 		        if(name.toLowerCase() === data.Cards[i].Name.toLowerCase()) {
@@ -37,6 +38,12 @@ app.get("/hi", function(req, res) {
 		            			found = true;
 		        			}
 		        		}
+		        		else {
+		        			l=k;
+		        		}
+		        	}
+		        	if(found==false) {
+		        		res.send(data.Cards[i].Name+"'s score in "+hero.substring(0,1).toUpperCase()+hero.substring(1).toLowerCase()+" is "+data.Cards[i].Scores[l].Score.toString());
 		        	}
 		    	}
 		    }
