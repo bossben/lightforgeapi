@@ -22,6 +22,7 @@ app.get("/hi", function(req, res) {
     let hero = req.query.hero;
     console.log(name);
     let a = name.split(" ");
+    console.log(a[a.length-1]);
     if(a[a.length-1].toLowerCase==="warlock" || a[a.length-1].toLowerCase==="priest" || a[a.length-1].toLowerCase==="mage" || a[a.length-1].toLowerCase==="druid" || a[a.length-1].toLowerCase==="warrior" || a[a.length-1].toLowerCase==="hunter" || a[a.length-1].toLowerCase==="shaman" || a[a.length-1].toLowerCase==="paladin" || a[a.length-1].toLowerCase==="rogue")
     {
     	hero = a[a.length-1];
