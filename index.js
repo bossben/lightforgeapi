@@ -26,6 +26,11 @@ app.get("/hi", function(req, res) {
     if(a[a.length-1].toLowerCase==="warlock" || a[a.length-1].toLowerCase==="priest" || a[a.length-1].toLowerCase==="mage" || a[a.length-1].toLowerCase==="druid" || a[a.length-1].toLowerCase==="warrior" || a[a.length-1].toLowerCase==="hunter" || a[a.length-1].toLowerCase==="shaman" || a[a.length-1].toLowerCase==="paladin" || a[a.length-1].toLowerCase==="rogue")
     {
     	hero = a[a.length-1];
+    	name=""
+    	for(let i = 0;i < a.length-1;i++)
+    	{
+    		name+=a[i];
+    	}
     }
     if(name==undefined) {
     	res.send("Check your input. It should be !score cardname class. The class is optional, unless you are searching for a class card.");
