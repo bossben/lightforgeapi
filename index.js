@@ -20,7 +20,7 @@ Endpoints
 app.get("/hi", function(req, res) {
     let name = req.query.name;
     let hero = req.query.hero;
-    res.send(name);
+    //res.send(name);
     let a = name.split(" ");
     console.log(a[a.length-1]);
     if(a[a.length-1].toLowerCase==="warlock" || a[a.length-1].toLowerCase==="priest" || a[a.length-1].toLowerCase==="mage" || a[a.length-1].toLowerCase==="druid" || a[a.length-1].toLowerCase==="warrior" || a[a.length-1].toLowerCase==="hunter" || a[a.length-1].toLowerCase==="shaman" || a[a.length-1].toLowerCase==="paladin" || a[a.length-1].toLowerCase==="rogue")
@@ -35,6 +35,7 @@ app.get("/hi", function(req, res) {
     if(name==undefined) {
     	res.send("Check your input. It should be !score cardname class. The class is optional, unless you are searching for a class card.");
     }
+    res.send(name+" is the name and " + hero + " is the hero.");
     else {
     	console.log(hero);
 	    let found = false;
