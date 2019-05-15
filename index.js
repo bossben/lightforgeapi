@@ -49,7 +49,7 @@ app.get("/hi", function(req, res) {
 		        	for(let k = 0; k<data.Cards[i].Scores.length; k++) {
 		        		if(data.Cards[i].Scores[k].Hero!=null) {
 		        			if(data.Cards[i].Scores[k].Hero.toLowerCase() === hero.toLowerCase()) {
-		        				res.send(data.Cards[i].Name+"'s score in "+data.Cards[i].Scores[k].Hero+" is "+data.Cards[i].Scores[k].Score.toString());
+		        				res.send(data.Cards[i].Name+"'s score in the "+data.Cards[i].Scores[k].Hero+" class is "+data.Cards[i].Scores[k].Score.toString());
 		            			found = true;
 		        			}
 		        		}
