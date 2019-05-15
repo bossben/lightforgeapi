@@ -37,10 +37,7 @@ app.get("/hi", function(req, res) {
     	name+=a[a.length-2];
     }
     if(name==undefined) {
-    	res.send("PlzzzzzCheck your input. It should be !score cardname class. The class is optional, unless you are searching for a class card.");
-    }
-    if(hero!=undefined) {
-    	res.send("oops");
+    	res.send("PlzzzzzCheck your input. It should be !score cardname class. The class is optional.");
     }
     else {
     	//res.send(hero);
@@ -82,7 +79,7 @@ app.get("/hi", function(req, res) {
 		}
 	    if(!found)
 	    {
-	        res.send("DDFSFCheck your input. It should be !score cardname class. The class is optional, unless you are searching for a class card.");
+	        res.send("DDFSFCheck your input. It should be !score cardname class. The class is optional.");
 	    }
     }
     
