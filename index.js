@@ -28,10 +28,12 @@ app.get("/hi", function(req, res) {
     {
     	hero = a[a.length-1];
     	name="";
-    	for(let i = 0;i < a.length-1;i++)
+    	for(let i = 0;i < a.length-2;i++)
     	{
     		name+=a[i];
+    		name+=" ";
     	}
+    	name+=a[a.length-2];
     }
     if(name==undefined) {
     	res.send("PlzzzzzCheck your input. It should be !score cardname class. The class is optional, unless you are searching for a class card.");
