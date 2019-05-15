@@ -58,7 +58,7 @@ app.get("/hi", function(req, res) {
 		        		}
 		        	}
 		        	if(found==false) {
-		        		res.send(data.Cards[i].Name+"'s score in "+hero.substring(0,1).toUpperCase()+hero.substring(1).toLowerCase()+" is "+data.Cards[i].Scores[l].Score.toString());
+		        		res.send(data.Cards[i].Name+" doesn't exist in the "+hero.substring(0,1).toUpperCase()+hero.substring(1).toLowerCase()+" class.");
 		        	}
 		    	}
 		    }
