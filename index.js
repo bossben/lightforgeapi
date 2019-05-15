@@ -74,6 +74,7 @@ app.get("/hi", function(req, res) {
 			    		found = true;
 					}
 					else {
+						res.send(data.Cards[i].Name+"'s score in the "+data.Cards[i].Hero+" class is "+data.Cards[i].Scores[0].Score.toString());
 						found = false;
 					}
 				}
