@@ -19,8 +19,9 @@ Endpoints
 */
 app.get("/hi", function(req, res) {
     let name = req.query.name;
-    let hero = req.query.hero;
+    //let hero = req.query.hero;
     //res.send(name);
+    let hero = undefined;
     let a = name.split(" ");
     console.log(a[a.length-1]);
     if(a[a.length-1].toLowerCase==="warlock" || a[a.length-1].toLowerCase==="priest" || a[a.length-1].toLowerCase==="mage" || a[a.length-1].toLowerCase==="druid" || a[a.length-1].toLowerCase==="warrior" || a[a.length-1].toLowerCase==="hunter" || a[a.length-1].toLowerCase==="shaman" || a[a.length-1].toLowerCase==="paladin" || a[a.length-1].toLowerCase==="rogue")
