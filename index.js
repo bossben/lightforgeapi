@@ -35,7 +35,7 @@ app.get("/hi", function(req, res) {
     if(name==undefined) {
     	res.send("Check your input. It should be !score cardname class. The class is optional, unless you are searching for a class card.");
     }
-    res.send(name+" is the name and " + hero + " is the hero.");
+    res.send(name);
     else {
     	console.log(hero);
 	    let found = false;
