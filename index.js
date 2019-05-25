@@ -79,7 +79,7 @@ app.get("/hi", function(req, res) {
 		}
 	    if(!found)
 	    {
-	        res.send("DDFSFCheck your input. It should be !score cardname class. The class is optional.");
+	        res.send("Check your input. It should be !score cardname class. The class is optional.");
 	    }
     }
     
