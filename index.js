@@ -37,7 +37,7 @@ app.get("/hi", function(req, res) {
     	name+=a[a.length-2];
     }
     if(name==undefined) {
-    	res.send("PlzzzzzCheck your input. It should be !score cardname class. The class is optional.");
+    	res.send("Please check your input. It should be !score cardname class. The class is optional.");
     }
     else {
     	//res.send(hero);
